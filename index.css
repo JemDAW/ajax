@@ -1,0 +1,38 @@
+body{
+   text-align: center;
+   background-color: rgb(18, 18, 18);
+   color: aqua;
+}
+h1{
+    font-family: Courier;
+    font-size: 3em;
+}
+label{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5em;
+}
+input[type=search]{
+    margin: 25px;
+    width: 250px;
+    height: 30px;
+    border-radius: 2px;
+    border-color: aqua;
+}
+button{
+    width: 150px;
+    height: 30px;
+    font-size: 1em;
+    border-radius: 11px;
+    background-color: aqua;
+    color: rgb(18, 18, 18);
+}
+div{
+    border: aqua 15px;
+    border-radius: 7px;
+    border-style: groove;
+    margin-top: 50px;
+    padding: 15px;
+}
+img{
+    padding: 15px; 
+}
