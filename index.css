@@ -11,7 +11,7 @@ label{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1.5em;
 }
-input[type=search]{
+input{
     margin: 25px;
     width: 250px;
     height: 30px;

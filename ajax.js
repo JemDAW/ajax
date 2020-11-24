@@ -5,6 +5,12 @@ div.style.opacity = 0;
 var botonBuscar= document.getElementById("buscarBoton");
 botonBuscar.addEventListener('click', busqueda, false);
 
+document.addEventListener('keydown', function(ev){
+    if(ev.key === 'Enter'){
+        busqueda();
+    }
+});
+
 const getJSON = function (url){
     return fetch(url).then(response => {
         return response.json();
@@ -14,7 +20,8 @@ const getJSON = function (url){
 
 function busqueda(){
     let elementoBuscar = document.getElementById("buscar").value;
-    getJSON(`http://api.giphy.com/v1/gifs/search?q=${elementoBuscar}&api_key=${key}&limit=5`)
+    let numero_a_buscar= document.getElementById("numeroGifs").value;
+    getJSON(`http://api.giphy.com/v1/gifs/search?q=${elementoBuscar}&api_key=${key}&limit=${numero_a_buscar}`)
     .then(data =>{
         let arrayDatos= data.data;
         div.innerHTML = " ";
